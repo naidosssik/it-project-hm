@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+actor teamLeader
+actor tester
+actor designer
+actor programmer
+actor soundDirector
+rectangle AllTasks {
+teamLeader -- (DistributionOfTasks)
+(DistributionOfTasks) .> (Supervision) : include
+teamLeader -- (ProjectPresentation)
+}
+@enduml
