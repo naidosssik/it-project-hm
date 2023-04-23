@@ -1,4 +1,4 @@
-@starluml
+@startuml
 Player --|> Controller
 class Controller {
 +Jump
@@ -32,4 +32,5 @@ Enemy <|-- Bullet
 Bullet <|-- Weapon
 Weapon <|-- MainCharacter
 Weapon <|-- Enemy
+MainCharacter <|-- Bullet
 @enduml
