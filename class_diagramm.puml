@@ -1,0 +1,35 @@
+@starluml
+Player --|> Controller
+class Controller {
++Jump
++MoveFonwards
++MoveLeft
++MoveRight
+}
+class MainCharacter {
+-Health
++LoseHealth
++Death
+}
+MainCharacter <|-- Controller
+class Enemy {
+-Health
+-Route
++LoseHealth
++Death
+}
+class Weapon {
+-NumberOfBullets
++ShootABullet
++ReloadGun
+}
+class Bullet {
+-FightRange
+-Damage
++DoDamage
+}
+Enemy <|-- Bullet
+Bullet <|-- Weapon
+Weapon <|-- MainCharacter
+Weapon <|-- Enemy
+@enduml
