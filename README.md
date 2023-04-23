@@ -3,7 +3,7 @@
 ## Home work
 - [Use case](https://github.com/naidosssik/it-project-hm/blob/main/usecase.puml)
 
-![image_2023-04-20_14-35-00](https://user-images.githubusercontent.com/121602055/233847748-aad33c83-7d83-4fbf-b370-820bfecbf1de.png)
+![image_2023-04-20_14-35-00](https://user-images.githubusercontent.com/121602055/233847748-aad33c83-7d83-4fbf-b370-820bfecbf1de.png width="200")
 
 - [Class](https://github.com/naidosssik/it-project-hm/blob/main/class_diagramm.puml)
 
