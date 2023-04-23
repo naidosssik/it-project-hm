@@ -10,5 +10,18 @@ rectangle AllTasks {
 teamLeader -- (DistributionOfTasks)
 (DistributionOfTasks) .> (Supervision) : include
 teamLeader -- (ProjectPresentation)
+(DistributionOfTasks) -- tester
+tester -- (TestingOfEveryAspectOfTheFinalProduct)
+(DistributionOfTasks) -- designer
+designer -- (CharacterAnimation)
+designer -- (design)
+(design) .> (EnvironmentalDesign) : include
+(design) .> (CharacterDesign) : include
+(DistributionOfTasks) -- programmer
+programmer -- (programming)
+(programming) .> (ProgrammingCharacterBehaviorModel) : include
+(programming) .> (WeaponProgramming) : include
+(DistributionOfTasks) -- soundDirector
+soundDirector -- (SoundProduction)
 }
 @enduml
