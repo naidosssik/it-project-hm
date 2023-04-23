@@ -1,6 +1,6 @@
 # it-project-hm
 
-##Home work
--Use case: 
--Class: 
--C4:
+## Home work
+- Use case: 
+- Class: 
+- C4:
