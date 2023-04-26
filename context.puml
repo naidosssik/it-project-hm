@@ -1,12 +1,12 @@
 @startuml Basic Sample
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-Person(admin, "Administrator")
-System_Boundary(c1, "Sample System") {
-    Container(web_app, "Web Application", "C#, ASP.NET Core 2.1 MVC", "Allows users to compare multiple Twitter timelines")
+Person(tester, "Game tester")
+System_Verification(c1, "Debugging") {
+    Context(web_app, "Web Application", "Dreams", "Use testing methods to detect bugs")
 }
-System(twitter, "Twitter")
+System(dreams, "Dreams")
 
-Rel(admin, web_app, "Uses", "HTTPS")
-Rel_L(web_app, twitter, "Gets tweets from", "HTTPS")
+Rel(tester, web_app, "Uses", "HTTPS")
+Rel_L(web_app, dreams, "Gets check", "HTTPS")
 @enduml
